@@ -17,6 +17,8 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
+if message.content == 'akiさん':
+        await message.channel.send('なに？','(  ᐛ)ﾊﾞﾅﾅ','引きちぎるぞ','伸ばすぞ','ねじる','( ᐛ )','(￣･ω･￣)','( 'ω'ｱﾋﾞｬｰ')
 
 
 bot.run(token)
