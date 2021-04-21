@@ -26,6 +26,9 @@ async def _neta2(ctx):
 @bot.command(name='info')
 async def info(ctx):
     await ctx.send('この項目は現在作成中です。')
+@bot.command(name=公式サイト)
+async def _kousikisite(ctx):
+    await ctx.send('http://yugiri.starfree.jp/index.html')
 
 
 
