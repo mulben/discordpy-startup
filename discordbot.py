@@ -22,7 +22,7 @@ async def _neta(ctx):
     await ctx.reply('あたいったら最強ね')
 @bot.command(name='ネタ2')
 async def _neta2(ctx):
-    await ctx.reply('不死鳥の名は伊達じゃない')
+    await ctx.reply('不死鳥の名は伊達じゃない by第六駆逐隊 響')
 @bot.command(name='info')
 async def info(ctx):
     await ctx.send('この項目は現在作成中です。')
