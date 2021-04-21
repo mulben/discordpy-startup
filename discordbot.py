@@ -23,11 +23,6 @@ async def _neta(ctx):
 @bot.command(name='ネタ2')
 async def _neta2(ctx):
     await ctx.reply('不死鳥の名は伊達じゃない')
-@bot.command(name='on_message')
-async def _on_message(ctx):
-    if "akiさん" in message.content:
-        word_list = ["なに？","(  ᐛ)ﾊﾞﾅﾅ","( '-' )","引きちぎるぞ","伸ばすぞ","ねじる","( ᐛ )","(￣･ω･￣)","( 'ω'ｱﾋﾞｬｰ"]
-        await message.channel.send(random.choice(word_list))
 
 
 
