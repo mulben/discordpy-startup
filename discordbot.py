@@ -11,7 +11,7 @@ async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
-activity = discord.Activity(name='Herokuを', type=discord.ActivityType.playing)
+    activity = discord.Activity(name='Herokuを', type=discord.ActivityType.playing)
     await client.change_presence(activity=activity)
 
 @bot.command(name='ping')
