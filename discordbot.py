@@ -12,6 +12,11 @@ async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
+async def on_message(message):
+    if "akiさん" in message.content:
+        word_list = ["なに？","(  ᐛ)ﾊﾞﾅﾅ","( '-' )","引きちぎるぞ","伸ばすぞ","ねじる","( ᐛ )","(￣･ω･￣)","( 'ω'ｱﾋﾞｬｰ"]
+        await message.channel.send(random.choice(word_list))
+
     
 
 @bot.command(name='ping')
