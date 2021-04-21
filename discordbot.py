@@ -1,6 +1,7 @@
 from discord.ext import commands
 import os
 import traceback
+import random
 
 bot = commands.Bot(command_prefix='m/')
 token = os.environ['DISCORD_BOT_TOKEN']
@@ -19,6 +20,9 @@ async def ping(ctx):
 @bot.command(name='ネタ')
 async def _neta(ctx):
     await ctx.reply('あたいったら最強ね')
+@bot.command(name='ネタ2')
+async def _neta2(ctx):
+    await ctx.reply('不死鳥の名は伊達じゃない')
 
 
 
