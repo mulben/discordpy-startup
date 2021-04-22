@@ -27,12 +27,16 @@ async def _neta2(ctx):
 async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
 @bot.command(name="info")
-async def info(ctx):
-    colour = random.randint(0x000000, 0xffffff)
-    embed = discord.Embed(title="info", description="murAさんぼっとのinformationです。困った時はこれを確認。",url="URL", colour=colour)
-    embed.set_thumbnail(url=bot.user.avatar_url_as(format='png'))
-    await ctx.reply(embed=embed)
-
+async def _info(ctx):
+    embed = discord.Embed(
+                          title="murAさんぼっと用info",
+                          color=0xFF0000,
+                          description="困った時に見るコマンド集。"
+                          )
+    embed.add_field(name="テスト",value="テスト",inline=False)
+    embed.set_footer(text="made by mco2.sys")
+    
+    await channel.send(embed=info)
 
 
 bot.run(token)
