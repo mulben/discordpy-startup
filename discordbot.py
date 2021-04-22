@@ -10,7 +10,7 @@ client = discord.Client()
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
-    error_msg = 'エラーが発生しました。作成者をメンションしてください。'.join(traceback.TracebackException.from_exception(orig_error).format())
+    error_msg = 'エラーが発生しました。'.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
 
@@ -36,7 +36,7 @@ async def info(ctx):
     embed.add_field(name="テスト",value="テスト",inline=False)
     embed.set_footer(text="made by mco2.sys")
     
-    await channel.send(embed=info)
+    await ctx.send(embed=info)
 
 
 bot.run(token)
