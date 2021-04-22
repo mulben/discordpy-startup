@@ -22,14 +22,16 @@ async def _neta(ctx):
     await ctx.reply('あたいったら最強ね')
 @bot.command(name='ネタ2')
 async def _neta2(ctx):
-    await ctx.reply('不死鳥の名は伊達じゃない by第六駆逐隊 響')
-@bot.command(name='info')
-async def info(ctx):
-    await ctx.send('この項目は現在作成中です。')
+    await ctx.reply('不死鳥の名は伊達じゃない by 響')
 @bot.command(name='公式サイト')
 async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
-
+@bot.command(name="help")
+async def discord_help(ctx):
+    colour = random.randint(0x000000, 0xffffff)
+    embed = discord.Embed(title="info", description="murAさんぼっとのinformationです。困った時はこれを確認。",url="URL", colour=colour)
+    embed.set_thumbnail(url=bot.user.avatar_url_as(format='png'))
+    await ctx.reply(embed=embed)
 
 
 
