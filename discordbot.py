@@ -44,7 +44,7 @@ async def discord_info(ctx):
                           )
     embed.add_field(name="テスト",value="テスト",inline=False)
     embed.set_footer(text="made by mco2.sys")
-    await ctx.send(embed=enbed)
-
+    await ctx.send(embed=await)
+    ctx.send(embed=embed)
 
 bot.run(token)
