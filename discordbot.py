@@ -28,7 +28,7 @@ async def _neta2(ctx):
 async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
 @bot.command(name="info")
-async def info(ctx):
+async def discord_info(ctx):
     embed = discord.Embed(
                           title="murAさんぼっと用info",
                           color=0xFF0000,
