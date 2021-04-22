@@ -18,15 +18,23 @@ async def on_command_error(ctx, error):
 @bot.command(name='ping')
 async def ping(ctx):
     await ctx.send('pong!!')
+
+
 @bot.command(name='ネタ')
 async def _neta(ctx):
     await ctx.reply('あたいったら最強ね')
+
+
 @bot.command(name='ネタ2')
 async def _neta2(ctx):
     await ctx.reply('不死鳥の名は伊達じゃない by 響')
+
+
 @bot.command(name='公式サイト')
 async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
+
+
 @bot.command(name="info")
 async def discord_info(ctx):
     embed = discord.Embed(
@@ -36,7 +44,6 @@ async def discord_info(ctx):
                           )
     embed.add_field(name="テスト",value="テスト",inline=False)
     embed.set_footer(text="made by mco2.sys")
-    
     await ctx.send(embed=info)
 
 
