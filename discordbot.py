@@ -33,8 +33,22 @@ async def _neta2(ctx):
 @bot.command(name='公式サイト')
 async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
+    
 
-
+@bot.command(name="bot")
+async def bot(ctx):
+    embed = discord.Embed(
+                          title="murAさんぼっとのBot情報",
+                          color=0x2ecc71,
+                          descroption="Botの詳しい概要です。"
+                          )
+    embed.add.field(name="```Name```",value="murAさんぼっと",inline=False)
+    embed.add.field(name="```Version```",value="1.3.0",inline=False)
+    embed.add.field(name="```DevelopLang```",value="Python",inline=False)
+    embed.set_footer(text="made by mco2.sys #8200")
+    await ctx.send(embed=embed)
+    
+    
 @bot.command(name="info")
 async def info(ctx):
     embed = discord.Embed(
@@ -46,7 +60,7 @@ async def info(ctx):
     embed.add_field(name="```ネタ2```",value="上と同じです。",inline=False)
     embed.add_field(name="```公式サイト```",value="音楽と絵文字の部屋の公式サイトのリンクが表示されます。未完成です。",inline=False)
     embed.add_field(name="```info```",value="困ったときに使うと、これが表示されます。",inline=False)
-    embed.set_footer(text="made by mco2.sys")
+    embed.set_footer(text="made by mco2.sys #8200")
     await ctx.send(embed=embed)
 
 bot.run(token)
