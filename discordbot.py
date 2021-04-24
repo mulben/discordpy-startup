@@ -43,7 +43,7 @@ async def ui(ctx):
                           descroption="Botの詳しい概要です。"
                           )
     embed.add_field(name="```Name```",value="murAさんぼっと",inline=False)
-    embed.add_field(name="```Version```",value="1.3.0 , Discord.py[voice]1.7.1 , Python 3.9.0",inline=False)
+    embed.add_field(name="```Version```",value="1.3.0|Discord.py[voice]1.7.1|Python 3.9.0",inline=False)
     embed.add_field(name="```DevelopLang```",value="Python",inline=False)
     embed.add_field(name="```Server```",value="Heroku-DynoFree[Git push]",inline=False)
     embed.add_field(name="```Made Date```",value="2021/04/10",inline=False)
