@@ -49,7 +49,7 @@ async def ui(ctx):
     await ctx.send(embed=embed)
     
     
-@bot.Command(name="info")
+@bot.command(name="info")
 async def info(ctx):
     embed = discord.Embed(
                           title="murAさんぼっと用info",
