@@ -35,9 +35,6 @@ async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
     
 
-@bot.command(name="緊急")
-async def sos(ctx):
-    await ctx.send('@!744343039140691999')
     
 
 @bot.command(name="ui")
@@ -68,7 +65,6 @@ async def info(ctx):
     embed.add_field(name="```公式サイト```",value="音楽と絵文字の部屋の公式サイトのリンクが表示されます。未完成です。",inline=False)
     embed.add_field(name="```ui```",value="Botの概要が見れます。",inline=False)
     embed.add_field(name="```info```",value="困ったときに使うと、これが表示されます。",inline=False)
-    embed.add_field(name="```緊急```",value="緊急時以外使用禁止。これを使用すると私にメンションが投下されます。",inline=False)
     embed.set_footer(text="made by mco2.sys #8200")
     await ctx.send(embed=embed)
 
