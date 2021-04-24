@@ -39,7 +39,7 @@ async def site(ctx):
 async def info(ctx):
     embed = discord.Embed(
                           title="murAさんぼっと用info",
-                          color=0xFF0000,
+                          color=0x3498db,
                           description="困った時に見るコマンド集。"
                           )
     embed.add_field(name="テスト",value="テスト",inline=False)
