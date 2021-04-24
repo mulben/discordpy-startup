@@ -23,7 +23,7 @@ async def on_message(message):
         return
     
     if re.match(r".*", message.content):
-        msg = f'{message.channel.id}で{message.author.id}_{message.author.name}さんが発言しました'
+        msg = f'{message.channel.id}で{message.author.name}さんが発言しました'
         await bot.get_channel(ch_id).send(msg)
         
 
