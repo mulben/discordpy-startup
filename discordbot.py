@@ -43,8 +43,10 @@ async def ui(ctx):
                           descroption="Botの詳しい概要です。"
                           )
     embed.add_field(name="```Name```",value="murAさんぼっと",inline=False)
-    embed.add_field(name="```Version```",value="1.3.0",inline=False)
+    embed.add_field(name="```Version```",value="1.3.0 ,Discord.py[voice]1.7.1 ,Python 3.9.0",inline=False)
     embed.add_field(name="```DevelopLang```",value="Python",inline=False)
+    embed.add_field(name="```Server```",value="Heroku-DynoFree[Git push]",inline=False)
+    embed.add_field(name="```Made Date```",value="2021/04/10",inline=False)
     embed.set_footer(text="made by mco2.sys #8200")
     await ctx.send(embed=embed)
     
@@ -59,6 +61,7 @@ async def info(ctx):
     embed.add_field(name="```ネタ```",value="Botが動いているか確認するためのテスト用コマンドです。",inline=False)
     embed.add_field(name="```ネタ2```",value="上と同じです。",inline=False)
     embed.add_field(name="```公式サイト```",value="音楽と絵文字の部屋の公式サイトのリンクが表示されます。未完成です。",inline=False)
+    embed.add_field(name="```ui```",value="Botの概要が見れます。",inline=False)
     embed.add_field(name="```info```",value="困ったときに使うと、これが表示されます。",inline=False)
     embed.set_footer(text="made by mco2.sys #8200")
     await ctx.send(embed=embed)
