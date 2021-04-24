@@ -35,8 +35,8 @@ async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
     
 
-@bot.command(name='緊急')
-async def _sos(ctx):
+@bot.command(name="緊急")
+async def sos(ctx):
     await ctx.send('@MCO2.sys#8200','@MCO2.sys#8200','@MCO2.sys#8200')
     
 
