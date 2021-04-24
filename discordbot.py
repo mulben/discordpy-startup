@@ -15,27 +15,27 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@bot.command(name='ping')
+@bot.Command(name='ping')
 async def ping(ctx):
     await ctx.send('pong!!')
 
 
-@bot.command(name='ネタ')
+@bot.Command(name='ネタ')
 async def _neta(ctx):
     await ctx.reply('あたいったら最強ね')
 
 
-@bot.command(name='ネタ2')
+@bot.Command(name='ネタ2')
 async def _neta2(ctx):
     await ctx.reply('不死鳥の名は伊達じゃない by 響')
 
 
-@bot.command(name='公式サイト')
+@bot.Command(name='公式サイト')
 async def site(ctx):
     await ctx.send('http://yugiri.starfree.jp/index.html')
     
 
-@bot.command(name="bot")
+@bot.Command(name="bot")
 async def bot(ctx):
     embed = discord.Embed(
                           title="murAさんぼっとのBot情報",
@@ -49,7 +49,7 @@ async def bot(ctx):
     await ctx.send(embed=embed)
     
     
-@bot.command(name="info")
+@bot.Command(name="info")
 async def info(ctx):
     embed = discord.Embed(
                           title="murAさんぼっと用info",
