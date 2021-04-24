@@ -42,9 +42,9 @@ async def ui(ctx):
                           color=0x2ecc71,
                           descroption="Botの詳しい概要です。"
                           )
-    embed.add.field(name="```Name```",value="murAさんぼっと",inline=False)
-    embed.add.field(name="```Version```",value="1.3.0",inline=False)
-    embed.add.field(name="```DevelopLang```",value="Python",inline=False)
+    embed.add_field(name="```Name```",value="murAさんぼっと",inline=False)
+    embed.add_field(name="```Version```",value="1.3.0",inline=False)
+    embed.add_field(name="```DevelopLang```",value="Python",inline=False)
     embed.set_footer(text="made by mco2.sys #8200")
     await ctx.send(embed=embed)
     
