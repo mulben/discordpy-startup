@@ -36,7 +36,7 @@ async def site(ctx):
 
 
 @bot.command(name="info")
-async def discord_info(ctx):
+async def info(ctx):
     embed = discord.Embed(
                           title="murAさんぼっと用info",
                           color=0xFF0000,
