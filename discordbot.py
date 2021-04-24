@@ -42,10 +42,10 @@ async def info(ctx):
                           color=0x3498db,
                           description="困った時に見るコマンド集。"
                           )
-    embed.add_field(name="ネタ",value="Botが動いているか確認するためのテスト用コマンドです。",inline=False)
-    embed.add_field(name="ネタ2",value="上と同じです。",inline=False)
-    embed.add_field(name="公式サイト",value="音楽と絵文字の部屋の公式サイトのリンクが表示されます。未完成です。",inline=False)
-    embed.add_field(name="info",value="困ったときに使うと、これが表示されます。",inline=False)
+    embed.add_field(name="```ネタ```",value="Botが動いているか確認するためのテスト用コマンドです。",inline=False)
+    embed.add_field(name="```ネタ2```",value="上と同じです。",inline=False)
+    embed.add_field(name="```公式サイト```",value="音楽と絵文字の部屋の公式サイトのリンクが表示されます。未完成です。",inline=False)
+    embed.add_field(name="```info```",value="困ったときに使うと、これが表示されます。",inline=False)
     embed.set_footer(text="made by mco2.sys")
     await ctx.send(embed=embed)
 
