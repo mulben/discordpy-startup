@@ -37,7 +37,7 @@ async def site(ctx):
 
 @bot.command(name="緊急")
 async def sos(ctx):
-    await ctx.send('@MCO2.sys#8200')
+    await ctx.send('@!744343039140691999')
     
 
 @bot.command(name="ui")
